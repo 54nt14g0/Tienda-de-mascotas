@@ -36,10 +36,20 @@ public class Dueño extends Persona{
 	public void setTiendaMascotas(TiendaMascotas tiendaMascotas) {
 		this.tiendaMascotas = tiendaMascotas;
 	}
-	public void comprarMascota () {
+	public void comprarMascota (String codigo) {
 		
-		
-		
+		Mascota  mascotaEncontrada = tiendaMascotas.obtenerMascota(codigo);
+		if (validarAlcanzaDinero (mascotaEncontrada)){
+			listaMascotas.add(mascotaEncontrada);
+			this.presupuesto = presupuesto - mascotaEncontrada.getPrecio();
+		}
+	}
+	private boolean validarAlcanzaDinero(Mascota mascotaEncontrada) {
+		boolean alcanza = false;
+		if (mascotaEncontrada.getPrecio()<presupuesto){
+			alcanza = true;
+		}
+		return alcanza;
 	}
 	
 }
