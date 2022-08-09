@@ -32,11 +32,10 @@ public class TiendaMascotas {
 		this.nombre = nombre;
 	}
 	// constructor
-	public TiendaMascotas(ArrayList<Dueño> listaDueños, ArrayList<Mascota> listaMascotas,
+	public TiendaMascotas(
 			 String nombre) {
 		super();
-		this.listaDueños = listaDueños;
-		this.listaMascotas = listaMascotas;
+		
 		this.nombre = nombre;
 	}
 	
@@ -57,6 +56,7 @@ public class TiendaMascotas {
 				 mascotaEncontrada = null;
 			}
 		}
+		
 	}
 	
 	
