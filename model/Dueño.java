@@ -4,14 +4,15 @@ import java.util.ArrayList;
 
 public class Dueño extends Persona{
 
-	
+	private TiendaMascotas tiendaMascotas;
 	private ArrayList <Mascota> listaMascotas = new ArrayList <>(); 
 	private double presupuesto;
 	// constructor
 	
-	public Dueño(String nombre, int edad, String codigo,double presupuesto) {
+	public Dueño(String nombre, int edad, String codigo,double presupuesto, TiendaMascotas tiendaMascotas) {
 		super(nombre, edad, codigo);
 		this.presupuesto = presupuesto;
+		this.tiendaMascotas = tiendaMascotas;
 	}
 	// getters y setters
 	public ArrayList<Mascota> getListaMascotas() {
@@ -28,5 +29,15 @@ public class Dueño extends Persona{
 		this.presupuesto = presupuesto;
 	}
 	
+	
+	public TiendaMascotas getTiendaMascotas() {
+		return tiendaMascotas;
+	}
+	public void setTiendaMascotas(TiendaMascotas tiendaMascotas) {
+		this.tiendaMascotas = tiendaMascotas;
+	}
+	public void comprarMascota () {
+		
+	}
 	
 }
