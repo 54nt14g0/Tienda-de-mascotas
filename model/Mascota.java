@@ -6,15 +6,17 @@ public class Mascota extends Animal{
 		private String nombre;
 		private String dueño;
 		private double precio;
+		private String codigo;
 		
 		// constructor
 		
-		public Mascota(int edad, String especie, String color, String tamanio, String nombre, String dueño, double precio) {
+		public Mascota(int edad, String especie, String color, String tamanio, String nombre, String dueño, double precio, String codigo) {
 			super(edad, especie, color, tamanio);
 			
 			this.nombre = nombre;
 			this.dueño = dueño;
 			this.precio = precio;
+			this.codigo = codigo;
 		}
 		
 		// getters y setters
@@ -42,5 +44,14 @@ public class Mascota extends Animal{
 		public void setPrecio(double precio) {
 			this.precio = precio;
 		}
+
+		public String getCodigo() {
+			return codigo;
+		}
+
+		public void setCodigo(String codigo) {
+			this.codigo = codigo;
+		}
+		
 		
 }

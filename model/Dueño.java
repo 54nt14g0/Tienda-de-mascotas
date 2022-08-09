@@ -38,6 +38,8 @@ public class Dueño extends Persona{
 	}
 	public void comprarMascota () {
 		
+		
+		
 	}
 	
 }

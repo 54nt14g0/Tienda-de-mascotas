@@ -40,7 +40,15 @@ public class TiendaMascotas {
 		this.nombre = nombre;
 	}
 	
-	
+	public Mascota obtenerMascota (String codigo) {
+		Mascota mascotaEncontrada =null;
+		for (int i = 0; i < listaMascotas.size(); i++) {
+			if (listaMascotas.get(i).getCodigo().equals(codigo)){
+				 mascotaEncontrada = listaMascotas.get(i);
+			}
+		}
+		return  mascotaEncontrada;
+	}
 	
 	
 	
