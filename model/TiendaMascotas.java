@@ -50,6 +50,15 @@ public class TiendaMascotas {
 		return  mascotaEncontrada;
 	}
 	
+	public void eliminarMascota (String codigo){
+		Mascota mascotaEncontrada =null;
+		for (int i = 0; i < listaMascotas.size(); i++) {
+			if (listaMascotas.get(i).getCodigo().equals(codigo)){
+				 mascotaEncontrada = null;
+			}
+		}
+	}
+	
 	
 	
 	

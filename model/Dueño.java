@@ -42,6 +42,7 @@ public class Dueño extends Persona{
 		if (validarAlcanzaDinero (mascotaEncontrada)){
 			listaMascotas.add(mascotaEncontrada);
 			this.presupuesto = presupuesto - mascotaEncontrada.getPrecio();
+			tiendaMascotas.eliminarMascota(codigo);
 		}
 	}
 	private boolean validarAlcanzaDinero(Mascota mascotaEncontrada) {
